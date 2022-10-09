@@ -3,13 +3,17 @@ const slides = Array.from(document.querySelectorAll(".slide"));
 const create = document.getElementById("create");
 const craateAccount = document.querySelector(".craate--account");
 const overlayAccount = document.querySelector(".overlay--account");
+const backgroundSlides = document.querySelectorAll(".background--slide");
 
 // slider
 let current = 0;
 //
 const change = function () {
   slides.forEach((slide, i) => {
-    slide.style.transform = `translate(${100 * (i - current)}%)`;
+    slide.style.transform = `translate(${200 * (i - current)}%)`;
+  });
+  backgroundSlides.forEach((backslide, index) => {
+    backslide.style.transform = `translate(${100 * (index - current)}%)`;
   });
 };
 //
@@ -20,6 +24,10 @@ const visualChange = function () {
     slide.classList.remove("slide__current");
   });
   slides[current].classList.add("slide__current");
+  backgroundSlides.forEach((backslide) => {
+    backslide.classList.remove("current--background");
+  });
+  backgroundSlides[current].classList.add("current--background");
 };
 change();
 
