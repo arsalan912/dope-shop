@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/page2.css" />
+    <link rel="stylesheet" href="/css/shoesSelect.css" />
+    <script src="/javascript/shoesData.js" defer></script>
+    <script src="/javascript/portal.js"></script>
+    <script src="/javascript/navbar.js" defer></script>
+    <script src="/javascript/shoes.js" defer></script>
+    <title>Shoes</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__right">
+        <div class="navbar__container navbar__coursel">
+          <div class="icon__container">
+            <div class="cousrel__line"></div>
+            <div class="cousrel__line"></div>
+            <div class="cousrel__line"></div>
+          </div>
+        </div>
+        <div class="navbar__icon">
+          <h2>D<span>o</span>pe</h2>
+        </div>
+      </div>
+      <a href="/card.html">
+        <div class="navbar__container navbar__bag">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="30"
+            height="30"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <defs></defs>
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 71.796 23.427 H 61.343 v -10.49 C 61.343 5.804 55.699 0 48.762 0 h -7.523 c -6.937 0 -12.581 5.804 -12.581 12.937 v 10.49 H 18.204 c -1.933 0 -3.5 1.567 -3.5 3.5 v 47.037 C 14.704 82.807 21.897 90 30.74 90 h 28.52 c 8.843 0 16.036 -7.193 16.036 -16.036 V 26.927 C 75.296 24.994 73.729 23.427 71.796 23.427 z M 35.657 12.937 C 35.657 9.664 38.161 7 41.238 7 h 7.523 c 3.077 0 5.581 2.664 5.581 5.937 v 10.49 H 35.657 V 12.937 z M 68.296 73.964 c 0 4.982 -4.054 9.036 -9.036 9.036 H 30.74 c -4.983 0 -9.037 -4.054 -9.037 -9.036 V 30.427 h 6.954 v 6.018 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -6.018 h 18.686 v 6.018 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -6.018 h 6.953 V 73.964 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(227, 227, 227);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+          <div class="red--noti">
+            <div class="red__noti--pulse"></div>
+          </div>
+        </div>
+      </a>
+    </nav>
+    <div class="navbar_items nav__close">
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="">Profiles</a></li>
+        <li class="page__active"><a href="/shopping.html">Shoes</a></li>
+        <li><a href="/card.html">Card</a></li>
+        <li><a href=""> About us</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div class="overlay"></div>
+    <div class="nav--next__container">
+      <div class="page--show">
+        <p>
+          <span><a href="/home.html">Home</a></span
+          ><span><img src="/icons/arrow-left-3099.svg" alt="" /></span>
+          <span class="current--page">Shoes</span>
+        </p>
+      </div>
+      <div class="input--search">Search...</div>
+    </div>
+    <div class="shop">
+      <div class="side--nav">
+        <div class="sort">
+          <div class="current__sort">
+            <div class="sort__left">
+              <p>SORT</p>
+              <p class="sort__message">What's new</p>
+            </div>
+            <img src="/icons/arrow-232.svg" alt="" />
+          </div>
+          <div class="smallScreen__sort">
+            <div class="sort__options">Low to high</div>
+            <div class="sort__options">High to low</div>
+            <div class="sort__options">What's new</div>
+          </div>
+        </div>
+        <div class="filter">
+          <div class="filter__field">FILTER</div>
+          <ul>
+            <div class="smallScreen__filter">
+              <li class="filters" data-tab="0">
+                <div class="current__filter">
+                  <div class="filter__name">Shoes type</div>
+                  <div class="filter__arrow">
+                    <img src="/icons/arrow-232.svg" alt="" />
+                  </div>
+                </div>
+                <div class="filters__options">Sneakers</div>
+                <div class="filters__options">Basketball</div>
+                <div class="filters__options">Running</div>
+              </li>
+              <li class="filters" data-tab="1">
+                <div class="current__filter">
+                  <div class="filter__name">Brand</div>
+                  <div class="filter__arrow">
+                    <img src="/icons/arrow-232.svg" alt="" />
+                  </div>
+                </div>
+                <div class="filters__options">Nike</div>
+                <div class="filters__options">Adidas</div>
+                <div class="filters__options">Puma</div>
+              </li>
+              <li class="filters" data-tab="2">
+                <div class="current__filter">
+                  <div class="filter__name">size</div>
+                  <div class="filter__arrow">
+                    <img src="/icons/arrow-232.svg" alt="" />
+                  </div>
+                </div>
+                <div class="size__options">
+                  <div class="size__numbers">36</div>
+                  <div class="size__numbers">37</div>
+                  <div class="size__numbers">38</div>
+                  <div class="size__numbers">39</div>
+                  <div class="size__numbers">40</div>
+                  <div class="size__numbers">41</div>
+                  <div class="size__numbers">42</div>
+                  <div class="size__numbers">43</div>
+                  <div class="size__numbers">44</div>
+                  <div class="size__numbers">45</div>
+                </div>
+              </li>
+              <li class="filters" data-tab="3">
+                <div class="current__filter">
+                  <div class="filter__name">Price Range</div>
+                  <div class="filter__arrow">
+                    <img src="/icons/arrow-232.svg" alt="" />
+                  </div>
+                </div>
+                <div class="filters__options">under 70$</div>
+                <div class="filters__options">under 120$</div>
+                <div class="filters__options">higher than 120%</div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="shoes__container"></div>
+    </div>
+    <div class="time__animation present__image">
+      <div class="slider">
+        <div class="slide slide--1"></div>
+        <div class="slide slide--2"></div>
+        <div class="slide slide--3"></div>
+      </div>
+      <div class="show__number"><span>02</span>/<span>04</span></div>
+      <div class="swipe swipe__left">
+        <img src="/icons/arrow-232.svg" alt="" />
+      </div>
+      <div class="swipe swipe__right">
+        <img src="/icons/arrow-232.svg" alt="" />
+      </div>
+    </div>
+    <div class="time__animation present__card">
+      <div class="present__card--show">
+        <div class="present__card--title">
+          <h1>Nike</h1>
+          <p>Roshe one essesial ID</p>
+        </div>
+        <div class="present__card--image">
+          <img src="/data/basketball/nike/nike-basketball1.png" alt="" />
+        </div>
+        <div class="present__card--footer">
+          <div class="tag present__card--brand">
+            <p>Brand</p>
+            <img src="" alt="" />
+          </div>
+          <div class="tag present__card--price">
+            <p>Price</p>
+            <h1>110$</h1>
+          </div>
+        </div>
+        <div class="present__card--size"></div>
+      </div>
+    </div>
+    <div class="time__animation backspace">
+      <img src="/icons/arrow-232.svg" alt="" />
+    </div>
+    <div class="time__animation addToShop">
+      <span>+</span>Add to shopping bag
+    </div>
+  </body>
+</html>

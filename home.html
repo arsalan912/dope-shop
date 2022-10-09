@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/page1.css" />
+    <script src="/javascript/shoesData.js" defer></script>
+    <script src="/javascript/navbar.js" defer></script>
+    <script src="/javascript/home.js" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__right">
+        <div class="navbar__container navbar__coursel">
+          <div class="icon__container">
+            <div class="cousrel__line"></div>
+            <div class="cousrel__line"></div>
+            <div class="cousrel__line"></div>
+          </div>
+        </div>
+        <div class="navbar__icon">
+          <h2>D<span>o</span>pe</h2>
+        </div>
+      </div>
+      <a href="/card.html">
+        <div class="navbar__container navbar__bag">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="30"
+            height="30"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+          >
+            <defs></defs>
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 71.796 23.427 H 61.343 v -10.49 C 61.343 5.804 55.699 0 48.762 0 h -7.523 c -6.937 0 -12.581 5.804 -12.581 12.937 v 10.49 H 18.204 c -1.933 0 -3.5 1.567 -3.5 3.5 v 47.037 C 14.704 82.807 21.897 90 30.74 90 h 28.52 c 8.843 0 16.036 -7.193 16.036 -16.036 V 26.927 C 75.296 24.994 73.729 23.427 71.796 23.427 z M 35.657 12.937 C 35.657 9.664 38.161 7 41.238 7 h 7.523 c 3.077 0 5.581 2.664 5.581 5.937 v 10.49 H 35.657 V 12.937 z M 68.296 73.964 c 0 4.982 -4.054 9.036 -9.036 9.036 H 30.74 c -4.983 0 -9.037 -4.054 -9.037 -9.036 V 30.427 h 6.954 v 6.018 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -6.018 h 18.686 v 6.018 c 0 1.933 1.567 3.5 3.5 3.5 s 3.5 -1.567 3.5 -3.5 v -6.018 h 6.953 V 73.964 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(227, 227, 227);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+          <div class="red--noti">
+            <div class="red__noti--pulse"></div>
+          </div>
+        </div>
+      </a>
+    </nav>
+    <div class="navbar_items nav__close">
+      <ul>
+        <li class="page__active"><a href="/home.html">Home</a></li>
+        <li><a href="">Profiles</a></li>
+        <li><a href="/shopping.html">Shoes</a></li>
+        <li><a href="/card.html">Card</a></li>
+        <li><a href=""> About us</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="slider-container">
+        <div class="slide slide__current" id="slide-1" data-tab="0">
+          <img src="/data/sneakers/nike/nike-sneakers4.png" alt="" />
+        </div>
+        <div class="slide" id="slide-2" data-tab="1">
+          <img src="/data/sneakers/adidas/adidas-sneakers5.png" alt="" />
+        </div>
+        <div class="slide" id="slide-3" data-tab="2">
+          <img src="/data/sneakers/puma/puma-sneakers1.png" alt="" />
+        </div>
+        <div class="slide" id="slide-4" data-tab="3">
+          <img src="/data/running/adidas/adidas-running4.png" alt="" />
+        </div>
+        <div class="slide" id="slide-5" data-tab="4">
+          <img src="/data/running/nike/nike-running1.png" alt="" />
+        </div>
+        <div class="slide" id="slide-6" data-tab="5">
+          <img src="/data/running/puma/puma-running5.png" alt="" />
+        </div>
+        <div class="slide" id="slide-7" data-tab="6">
+          <img src="/data/basketball/adidas/adidas-basketball5.png" alt="" />
+        </div>
+        <div class="slide" id="slide-8" data-tab="7">
+          <img src="/data/basketball/nike/nike-basketball1.png" alt="" />
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="/shopping.html" class="btn"><p>What's new</p></a
+        ><a class="btn" id="create"><p>Create Account</p></a>
+      </div>
+    </div>
+    <div class="overlay--account"></div>
+    <div class="craate--account">
+      <p>Create your account</p>
+      <form>
+        <input type="email" placeholder="Email" name="email" maxlength="40" />
+        <input
+          type="password"
+          placeholder="password"
+          name="password"
+          maxlength="8"
+        />
+        <input type="password" placeholder="Confirm password" />
+        <div class="btns">
+          <button type="submit">Sign in</button>
+          <button type="submit">Sign up</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

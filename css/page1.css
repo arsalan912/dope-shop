@@ -1,0 +1,157 @@
+:root {
+  --background-Color: #ffffff;
+  --color-red: #ea5858;
+  --color-primary: #141414;
+  --color-secondary: #b1b1b1;
+  --color-shoes: #f5eff2;
+  --color-filter: #ece7e9;
+  --number: 500px;
+  --image: 230px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  animation: changing 5s infinite linear;
+}
+@keyframes changing {
+  0% {
+    background: #04040422;
+  }
+  50% {
+    background: #ea58582d;
+  }
+  100% {
+    background: #04040422;
+  }
+}
+
+.slider-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transition: 0.7s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide {
+  position: absolute;
+  width: var(--number);
+  height: var(--number);
+
+  border-radius: 100%;
+
+  transition: transform 0.6s ease, background-color 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.slide img {
+  filter: grayscale(100%);
+  transition: 1s;
+  width: var(--image);
+  transform: rotate(0deg);
+}
+.slide__current {
+  z-index: 4;
+  background-color: #f5eff2a1;
+}
+.slide__current img {
+  filter: grayscale(0);
+  scale: 1.5;
+  transform: rotate(-15deg);
+}
+.buttons {
+  position: absolute;
+  display: flex;
+  bottom: 20%;
+  left: 20%;
+  z-index: 4;
+  cursor: pointer;
+  font-weight: 200;
+}
+.buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  text-decoration: none;
+  padding: 2rem 3rem;
+  margin: 1rem;
+  font-size: 2.5rem;
+  box-sizing: border-box;
+}
+.buttons a:first-child {
+  background-color: var(--color-primary);
+  color: var(--background-Color);
+}
+.buttons a:first-child:hover {
+  background-color: var(--color-red);
+}
+.buttons a:last-child {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+.buttons a:last-child:hover {
+  background-color: var(--color-primary);
+  color: var(--background-Color);
+}
+
+@media screen and (max-width: 1300px) {
+  :root {
+    --number: 400px;
+    --image: 200px;
+  }
+  .buttons a {
+    height: 6rem;
+    padding: 2rem 2rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  :root {
+    --number: 300px;
+    --image: 150px;
+  }
+  .buttons {
+    left: 10%;
+  }
+  .buttons a {
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  :root {
+    --number: 250px;
+    --image: 130px;
+  }
+  .buttons {
+    left: 5%;
+  }
+  .buttons a {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  :root {
+    --number: 200px;
+    --image: 110px;
+  }
+  .buttons a {
+    padding: 1.5rem 1.4rem;
+    font-size: 1.3rem;
+  }
+}

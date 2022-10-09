@@ -1,0 +1,136 @@
+:root {
+  --background-Color: #ffffff;
+  --color-red: #ea5858;
+  --color-primary: #141414;
+  --color-secondary: #b1b1b1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*::after,
+*::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-Color);
+  font-size: 1.8rem;
+  color: var(--color-secondary);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.page--show span:first-child {
+  cursor: pointer;
+}
+/* form */
+.overlay--account {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 800;
+  backdrop-filter: blur(5px);
+  transition: 0.2s;
+}
+.overlay--active {
+  left: 0;
+}
+.craate--account {
+  position: absolute;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.147);
+  width: 0;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-Color);
+  padding: 2rem 4rem;
+  overflow: hidden;
+  transition: 0.2s;
+  z-index: 999;
+}
+.account__active {
+  width: 40rem;
+  top: 50%;
+}
+.account__active p {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+.account__active form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.account__active form input {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  padding: 1rem;
+  background-color: rgb(235, 235, 235);
+  outline: none;
+  border: none;
+}
+.btns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.btns button {
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.btns button:first-child {
+  background-color: #141414;
+  color: var(--background-Color);
+}
+.btns button:first-child:hover {
+  border: 2px solid #141414;
+  color: var(--color-primary);
+  background: none;
+}
+.btns button:last-child {
+  border: 2px solid #141414;
+  color: var(--color-primary);
+  background: none;
+}
+.btns button:last-child:hover {
+  background-color: #141414;
+  color: var(--background-Color);
+}
+/* body::-webkit-scrollbar {
+  width: 10px;
+  background: none;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(61, 61, 61);
+  border-radius: 5px;
+} */
+@media screen and (max-width: 550px) {
+  .account__active {
+    width: 30rem;
+  }
+  .craate--account {
+    padding: 2rem 2rem;
+  }
+}
