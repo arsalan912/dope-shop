@@ -11,7 +11,12 @@
 body::-webkit-scrollbar {
   display: none;
 }
-
+#dope {
+  color: var(--color-filter);
+}
+#dope span {
+  color: var(--color-filter);
+}
 .content {
   width: 100vw;
   height: 100vh;
@@ -94,7 +99,7 @@ body::-webkit-scrollbar {
 }
 .slide__current {
   z-index: 4;
-  background-color: #f5eff2a1;
+  background-color: #f5eff2c0;
 }
 .slide__current img {
   filter: grayscale(0);
@@ -126,7 +131,8 @@ body::-webkit-scrollbar {
   color: var(--background-Color);
 }
 .buttons a:first-child:hover {
-  background-color: var(--color-red);
+  background-color: var(--color-filter);
+  color: var(--color-primary);
 }
 .buttons a:last-child {
   background-color: var(--color-red);
@@ -134,8 +140,8 @@ body::-webkit-scrollbar {
   color: var(--background-Color);
 }
 .buttons a:last-child:hover {
-  background-color: var(--color-primary);
-  color: var(--background-Color);
+  background-color: var(--color-filter);
+  color: var(--color-primary);
 }
 
 @media screen and (max-width: 1300px) {
