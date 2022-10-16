@@ -34,6 +34,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
   margin-left: 20rem;
   opacity: 0;
+  display: none;
 }
 .card__container {
   display: grid;
